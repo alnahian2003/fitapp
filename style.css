@@ -258,7 +258,7 @@ section {
 
 /* Footer Section */
 #footer {
-    background: url(../images/footer-bg.png) no-repeat, #2ecc71;
+    background: url(images/footer-bg.png) no-repeat, #2ecc71;
     background-position: center center;
     background-size: contain;
 }
