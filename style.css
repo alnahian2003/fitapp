@@ -1,0 +1,411 @@
+/* CSS Global Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto",
+        sans-serif !important;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 16px !important;
+}
+
+body {
+    font-size: 1.125rem !important;
+    overflow-x: hidden;
+    color: #5a5a5a !important;
+}
+
+h1 {
+    font-size: 4rem !important;
+}
+
+h2 {
+    font-size: 3rem !important;
+    font-weight: 100 !important;
+}
+
+h1,
+h2 {
+    font-weight: 100 !important;
+}
+
+p {
+    font-size: 1.125rem !important;
+    line-height: 2;
+    font-weight: 100;
+}
+
+img {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    user-drag: none;
+    user-select: none;
+    height: auto;
+    max-width: 100%;
+    pointer-events: none;
+}
+
+::selection {
+    background-color: #2ecc71;
+    color: #ffffff;
+}
+
+.btn:focus {
+    box-shadow: none !important;
+}
+
+/* Preloader */
+.preloader {
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 150;
+    display: flex;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+.preloader.opacity-0 {
+    opacity: 0;
+}
+
+.preloader .loader {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 0.25rem solid #2ecc71;
+    border-radius: 50%;
+    border-top: 0.25rem solid transparent;
+    border-bottom: 0.25rem solid transparent;
+    animation: spin 2s linear infinite;
+    -webkit-animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+/* End: Preloader */
+
+/* End CSS Global Rules */
+
+/* Reusable Components */
+
+section {
+    padding: 3.125rem 0;
+}
+
+/* End Reusable Components */
+
+/* Custom Classes */
+
+/* Custom Classes for Texts */
+.text-green {
+    color: #2ecc71 !important;
+    font-weight: 100 !important;
+}
+
+.text-gray {
+    color: #b4b4b4 !important;
+}
+
+.text-metal {
+    color: #5a5a5a !important;
+    font-weight: 100 !important;
+}
+
+.text-bold {
+    font-weight: 700 !important;
+}
+
+/* Custom Classes for Backgrounds */
+.bg-green {
+    background: #2ecc71 !important;
+}
+
+.bg-shade {
+    background: #f9f9f9 !important;
+}
+
+/* Custom Button */
+.get-app {
+    padding: 0.3125rem 1.875rem !important;
+    color: #2ecc71 !important;
+    background-color: #fff !important;
+    border-radius: 3.125rem !important;
+}
+
+/* End Custom Classes */
+
+/* Main Styles */
+
+/* Hero Section Styling */
+
+/* Navbar Styling */
+.navbar-light .navbar-toggler {
+    border: 0.0625rem solid transparent !important;
+    outline: 0.0625rem solid transparent !important;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:active {
+    color: #f9f9f9 !important;
+}
+
+.navbar-nav li {
+    margin-left: 1.875rem !important;
+}
+
+#hero {
+    color: #ffffff;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.bg-image img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    filter: blur(0.3125rem);
+    overflow-x: hidden;
+}
+
+.hero-left {
+    margin-top: 6.25rem;
+}
+
+.rounded-icon {
+    border-radius: 1.25rem;
+    box-shadow: 0 0 3.75rem #00000015;
+}
+
+.appstore .card,
+.playstore .card {
+    border: 0.125rem solid #ffffff !important;
+    border-radius: 0.625rem !important;
+}
+
+/* End Hero Section Styling */
+
+#plan .container {
+    position: relative;
+    padding-top: 3.125rem;
+}
+
+.plan-bg-image {
+    position: absolute;
+    bottom: 10%;
+    filter: blur(0.3125rem);
+
+}
+
+/* End Plan Section */
+
+/* Manage Section */
+.item-image img {
+    width: 5rem !important;
+}
+
+.food-items p {
+    line-height: 1 !important;
+}
+
+.screen {
+    display: none;
+}
+
+/* End Manage Section */
+
+/* Footer Section */
+#footer {
+    background: url(../images/footer-bg.png) no-repeat, #2ecc71;
+    background-position: center center;
+    background-size: contain;
+}
+
+.our-app-btn {
+    padding: 0.3125rem 100px !important;
+    color: #2ecc71 !important;
+    background-color: #fff !important;
+    border-radius: 3.125rem !important;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+/* End Footer Section */
+
+/* End Main Styles */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    body {
+        font-size: 16px !important;
+        text-align: center !important;
+    }
+
+    h1 {
+        font-size: 40px !important;
+    }
+
+    h2 {
+        font-size: 30px !important;
+    }
+
+    .bg-image img {
+        top: 300px !important;
+        overflow: hidden !important;
+    }
+
+    #hero .row {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    #hero .row p {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .download-app {
+        display: none !important;
+    }
+
+    .download-app:last-child {
+        display: none !important;
+
+    }
+
+    #manage {
+        padding: 50px 0 !important;
+    }
+
+    #manage .row p {
+        margin-right: 0 !important;
+    }
+
+    .food-items {
+        display: none !important;
+
+    }
+
+    .screen {
+        display: block !important;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+        text-align: center !important;
+    }
+
+    h1 {
+        font-size: 50px !important;
+    }
+
+    h2 {
+        font-size: 40px !important;
+    }
+
+    .bg-image img {
+        top: 300px !important;
+    }
+
+    #hero .row {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    #hero .row p {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .download-buttons {
+        margin-left: 15% !important;
+    }
+
+    #manage .row p {
+        margin-right: 0 !important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    h1 {
+        font-size: 50px !important;
+    }
+
+    h2 {
+        font-size: 40px !important;
+    }
+
+    .bg-image img {
+        top: 300px !important;
+    }
+
+    #hero .row {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    #hero .row p {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    #manage {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 1900px) {
+    .bg-image img {
+        top: 100px !important;
+        overflow-x: hidden !important;
+    }
+}
